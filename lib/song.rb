@@ -21,7 +21,7 @@ class Song
   end
   
   def artist_name=(name)
-    if (self.artist.nil?)
+    if Artist.all.detect { |artist| artist == name }
       self.artist = Artist.new(name)
     else 
       self.artist.name = name 
