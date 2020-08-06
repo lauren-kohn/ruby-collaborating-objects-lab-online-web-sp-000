@@ -25,7 +25,8 @@ class Song
   end
   
   def artist_name=(name)
-    self.artist = Artist.find_or_create_by_name(name)
+    self.artist = Artist.find_or_create_by_name(name) 
+      # uses self to identify the Song instance and associates an Artist with the song using the #find_or_create_by_name method from the Artist class
   end 
 
 end
