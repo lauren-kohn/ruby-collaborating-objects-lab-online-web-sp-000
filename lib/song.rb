@@ -26,7 +26,8 @@ class Song
   
   def artist_name=(name)
     binding.pry
-    Artist.find_or_create_by_name(name)
+    artist = Artist.find_or_create_by_name(name)
+    
     #if Artist.all.detect { |artist| artist == name }
     #  self.artist = Artist.new(name)
     #else 
