@@ -23,11 +23,11 @@ class Song
   end
   
   def artist_name=(name)
-    if Artist.all.detect { |artist| artist == name }
-      self.artist = Artist.new(name)
-    else 
-      self.artist.name = name 
-    end 
+    #if Artist.all.detect { |artist| artist == name }
+    #  self.artist = Artist.new(name)
+    #else 
+    #  self.artist.name = name 
+    #end 
   end 
 
 end
