@@ -18,6 +18,7 @@ class Song
     else 
       self.artist.name = name 
     end 
+    puts Artist.all
   end 
 
 end
